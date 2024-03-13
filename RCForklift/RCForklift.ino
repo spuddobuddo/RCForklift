@@ -53,6 +53,8 @@ void loop() {
     digitalWrite(in1, LOW);
     digitalWrite(in2, LOW);
   }
+
+  int buttonState = digitalRead(in1);
   
 //   for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
 //     // in steps of 1 degree

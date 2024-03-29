@@ -54,7 +54,9 @@ void loop() {
     digitalWrite(in2, LOW);
   }
 
-  int buttonState = digitalRead(in1);
+  // int buttonState = digitalRead(in1);
+  // Serial.println();
+  // delay(500);
   
 //   for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
 //     // in steps of 1 degree

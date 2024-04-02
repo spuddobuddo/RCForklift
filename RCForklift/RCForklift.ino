@@ -11,6 +11,7 @@ char c;
 
 void setup() {
   // put your setup code here, to run once:
+  Serial.begin(9600);
 
   pinMode(enA, OUTPUT);
 	//pinMode(enB, OUTPUT);
@@ -18,8 +19,6 @@ void setup() {
 	pinMode(in2, OUTPUT);
 	//pinMode(in3, OUTPUT);
 	//pinMode(in4, OUTPUT);
-
-  Serial.begin(9600);
 
   digitalWrite(in1, LOW);
 	digitalWrite(in2, LOW);

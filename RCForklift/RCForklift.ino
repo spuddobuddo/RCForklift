@@ -35,43 +35,43 @@ void setup() {
 }
 
 void loop() {
-  analogWrite(enA, 255);
+  analogWrite(enA, 255); //enables motors
   analogWrite(enB, 225);
   
-  if(Serial.available())
+  if(Serial.available()) //hc05 commands
   {
     c = Serial.read();
   }
-  if (c == '1')
+  if (c == '1') //motor forward
   {
     digitalWrite(in1, HIGH);
     digitalWrite(in2, LOW);
     digitalWrite(in3, HIGH);
     digitalWrite(in4, LOW);
   }
-  else if(c == '2')
+  else if(c == '2') //motor backward
   {
     digitalWrite(in1, LOW);
     digitalWrite(in2, HIGH);
     digitalWrite(in3, LOW);
     digitalWrite(in4, HIGH);
   }
-  else if(c == '0')
+  else if(c == '0') //motor off
   {
     digitalWrite(in1, LOW);
     digitalWrite(in2, LOW);
     digitalWrite(in3, LOW);
     digitalWrite(in4, LOW);
   }
-  else if(c == '3')
+  else if(c == '3') //servo turn right
   {
     pootis.write(180);
   }
-  else if(c == '4')
+  else if(c == '4') //servo turn left
   {
     pootis.write(0);
   }
-  else if(c == '5')
+  else if(c == '5') //servo turn back to neutral
   {
     pootis.write(90);
   }

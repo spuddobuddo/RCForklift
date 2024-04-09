@@ -5,8 +5,8 @@ int in1 = 12;
 int in2 = 13;
 
 int enB = 8;
-int in3 = 10;
-int in4 = 9;
+int in3 = 9;
+int in4 = 10;
 
 Servo pootis;
 int pos = 0;
@@ -37,6 +37,10 @@ void setup() {
 void loop() {
   analogWrite(enA, 255); //enables motors
   analogWrite(enB, 225);
+  // digitalWrite(in3, HIGH);
+  // digitalWrite(in4, LOW);
+  // digitalWrite(in1, HIGH);
+  // digitalWrite(in2, LOW);
   
   if(Serial.available()) //hc05 commands
   {
